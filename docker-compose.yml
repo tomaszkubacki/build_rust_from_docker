@@ -1,6 +1,6 @@
-version: "3.8"
 services:
-  dev:
-    image: rust:1.77
+  rust_builder:
+    image: rust-builder
+    build: ./rust_builder
     volumes:
-       - ./projects:/projects
+       - ./source:/source
